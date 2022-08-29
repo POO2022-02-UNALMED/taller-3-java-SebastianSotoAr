@@ -1,56 +1,56 @@
 package talle3.televisores;
 
-class Control {
+public class Control {
 	private TV tv;
 	
-	void setTV(TV tv) {
+	public void setTV(TV tv) {
 		this.tv = tv;
 	
 	}
 	
-	TV getTV() {
+	public TV getTV() {
 		return this.tv;
 		
 	}
 
-	void enlazar(TV tv) {
-		this.tv = tv;
-		tv.control = this;
+	public void enlazar(TV tv) {
+		tv.setControl(this);
 		
 	}
 	
-	void turnOn() {
+	public void turnOn() {
 		this.tv.turnOn();
 		
 	}
 	
-	void turnOff() {
+	public void turnOff() {
 		this.tv.turnOff();
 		
 	}
 	
-	void canalUp() {
+	public void canalUp() {
 		this.tv.canalUp();
 		
 	}
 	
-	void canalDown() {
+	public void canalDown() {
 		this.tv.canalDown();
 		
 	}
 	
-	void volumenUp() {
+	public void volumenUp() {
 		this.tv.volumenUp();
 		
 	}
 	
-	void volumenDown() {
+	public void volumenDown() {
 		this.tv.volumenDown();
 		
 	}
 	
-	void setCanal(int canal) {
+	public void setCanal(int canal) {
 		this.tv.setCanal(canal);
 		
 	}
+
 }
