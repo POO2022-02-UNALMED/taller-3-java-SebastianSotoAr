@@ -1,6 +1,6 @@
 package talle3.televisores;
 
-class TV {
+public class TV {
 	private Marca marca;
 	private int canal;
 	private int precio;
@@ -9,7 +9,7 @@ class TV {
 	private Control control;
 	private static int numTV = 0;
 
-	TV(Marca marca, boolean estado) {
+	public TV(Marca marca, boolean estado) {
 		this.marca = marca;
 		this.estado = estado;
 		this.canal = 1;
@@ -19,22 +19,22 @@ class TV {
 		
 	}
 
-	void setMarca(Marca marca) {
+	public void setMarca(Marca marca) {
 		this.marca = marca;
 		
 	}
 	
-	void setControl(Control control) {
+	public void setControl(Control control) {
 		this.control = control;
 	
 	}
 	
-	void setPrecio(int precio) {
+	public void setPrecio(int precio) {
 		this.precio = precio;
 	
 	}
 	
-	void setVolumen(int volumen) {
+	public void setVolumen(int volumen) {
 		if ((volumen <= 7) && (volumen >= 0) && (this.estado == true)) {
 			this.volumen = volumen;
 			
@@ -42,7 +42,7 @@ class TV {
 		
 	}
 	
-	void setCanal(int canal) {
+	public void setCanal(int canal) {
 		if ((canal <= 120) && (canal >= 1) && (this.estado == true)) {
 			this.canal = canal;
 			
@@ -50,51 +50,51 @@ class TV {
 		
 	}
 	
-	Marca getMarca() {
+	public Marca getMarca() {
 		return this.marca;
 		
 	}
 	
-	Control getControl() {
+	public Control getControl() {
 		return this.control;
 		
 	}
 	
-	int getPrecio() {
+	public int getPrecio() {
 		return this.precio;
 		
 	}
 	
-	int getVolumen() {
+	public int getVolumen() {
 		return this.volumen;
 		
 	}
 	
-	int getCanal() {
+	public int getCanal() {
 		return this.canal;
 		
 	}
 	
-	int getNumTV() {
+	public int getNumTV() {
 		return numTV;
 	}
 	
-	void turnOn() {
+	public void turnOn() {
 		this.estado = true;
 			
 	}
 	
-	void turnOff () {
+	public void turnOff () {
 		this.estado = false;
 		
 	}
 	
-	boolean getEstado() {
+	public boolean getEstado() {
 		return this.estado;
 		
 	}
 	
-	void canalUp() {
+	public void canalUp() {
 		if (this.estado == true) {
 			if (this.canal != 120) {
 				this.canal += 1;
@@ -105,7 +105,7 @@ class TV {
 		
 	}
 	
-	void canalDown() {
+	public void canalDown() {
 		if (this.estado == true) {
 			if (this.canal != 1) {
 				this.canal -= 1;
@@ -117,7 +117,7 @@ class TV {
 	}
 	
 	
-	void volumenUp() {
+	public void volumenUp() {
 		if (this.estado == true) {
 			if (this.volumen != 7) {
 				this.volumen += 1;
@@ -128,7 +128,7 @@ class TV {
 		
 	}
 	
-	void volumenDown() {
+	public void volumenDown() {
 		if (this.estado == true) {
 			if (this.volumen != 0) {
 				this.volumen -= 1;
@@ -138,7 +138,5 @@ class TV {
 		}
 		
 	}
-	
-	
 	
 }
