@@ -1,4 +1,4 @@
-package talle3.televisores;
+package taller3.televisores;
 
 public class Control {
 	private TV tv;
@@ -14,6 +14,7 @@ public class Control {
 	}
 
 	public void enlazar(TV tv) {
+		this.tv = tv;
 		tv.setControl(this);
 		
 	}

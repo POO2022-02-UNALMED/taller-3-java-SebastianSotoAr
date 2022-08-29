@@ -1,4 +1,4 @@
-package talle3.televisores;
+package taller3.televisores;
 
 public class Marca {
 	private String nombre;
