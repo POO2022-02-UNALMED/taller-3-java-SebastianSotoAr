@@ -18,6 +18,10 @@ public class TV {
 		numTV += 1;
 		
 	}
+	
+	public static void setNumTV(int numTV) {
+		TV.numTV = numTV;
+	}
 
 	public void setMarca(Marca marca) {
 		this.marca = marca;
