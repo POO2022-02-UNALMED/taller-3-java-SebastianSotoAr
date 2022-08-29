@@ -3,12 +3,12 @@ package taller3.televisores;
 public class Control {
 	private TV tv;
 	
-	public void setTV(TV tv) {
+	public void setTv(TV tv) {
 		this.tv = tv;
 	
 	}
 	
-	public TV getTV() {
+	public TV getTv() {
 		return this.tv;
 		
 	}
